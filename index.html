@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
+	<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 	<div class="container">
 		<div class="row">
 			<div class="col-md-8 offset-md-2">
@@ -26,19 +27,23 @@
 						<input type="number" name="number" min="1" max="99" id="number" class="form-control" placeholder="Enter a number">
 					</div>
 					<div class="form-group">
-						<select class="form-control" id="dropdown">
-							<option>abababa</option>
+						<select id="dropdown" name="dropdown" class="form-control">
+							<option selected="true" disabled="disabled">Select a course</option>
+							<option>Architecture</option>
+							<option>Chemical Engineering</option>
+							<option>Software Engineering</option>
+							<option>Building</option>
 						</select>
 					</div>
 					<div class="custom-control custom-radio">
-					  <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+					  <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input" value="val1">
 					  <label class="custom-control-label" for="customRadio1">Toggle this custom radio</label>
 					</div>
 					<div class="custom-control custom-radio">
-					  <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+					  <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input" value="val2">
 					  <label class="custom-control-label" for="customRadio2">Or toggle this other custom radio</label>
 					</div>
-					<div class="form-group">						
+					<div class="form-group">
 						<input type="checkbox" value="bike">
 						<label >Checkbox 1</label>
 					</div>
@@ -49,6 +54,10 @@
 					<div class="form-group">						
 						<input type="checkbox" value="yolo">
 						<label >Checkbox 3</label>
+					</div>
+					<div class="form-group">
+						<label for="textarea">Add comments and questions here</label>						
+						<textarea name="" id="textarea" cols="30" rows="3" class="form-control"></textarea>
 					</div>
 					<button type="submit" id="submit">Submit</button>
 				</form>
